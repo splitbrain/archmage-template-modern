@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title><%title%></title>
+
+    <script type="text/javascript">
+        function frameloaded(){
+            document.title = window.content.document.title;
+        }
+    </script>
+</head>
+<frameset cols="200,*" bordercolor="#176092" frameborder="yes" framespacing="1">
+    <frame name="toc" src="arch_contents.html">
+    <frame name="content" src="<%deftopic%>" onload="frameloaded()">
+</frameset>
+</html>
